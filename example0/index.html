@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebGL Demo</title>
+    <script src="../dist/example0.js" defer></script>
+  </head>
+  <body>
+  <canvas id="canvas" width="512" height="512" style="display: none;"></canvas>
+  <div class="{
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }">
+  <canvas id="canvas2" style="z-index: 1; display: block; height: 100%; width: 2560; margin: 0%; padding: 0%; border: 0;
+  outline: 0;"></canvas>
+  <button id='button' style="z-index:2; position:absolute; top:100px; left: 100px;">FULLSCREEN</button> 
+  <button id='button2' style="z-index:2; position:absolute; top:100px; left: 200px;">BACKLIGHT</button> 
+  <button id='btnOrtho' style="z-index:2; position:absolute; top:100px; left: 300px;">ORTHO</button> 
+  <button id='btnPerspective' style="z-index:2; position:absolute; top:100px; left: 500px;">PERSPECTIVE</button> 
+  
+  </div>
+  <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+  <script src="https://webglfundamentals.org/webgl/resources/m4.js"></script>
+  </body>
+</html>
