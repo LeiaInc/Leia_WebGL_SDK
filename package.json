@@ -1,6 +1,6 @@
 {
   "name": "leiawebglsdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "leia webgl sdk",
   "main": "index.js",
   "dependencies": {
