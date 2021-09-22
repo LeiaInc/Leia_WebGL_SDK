@@ -1,7 +1,7 @@
 {
-  "name": "sevensummitswebglsdkdemo",
-  "version": "1.0.1",
-  "description": "webgl sdk",
+  "name": "leiawebglsdk",
+  "version": "1.0.2",
+  "description": "leia webgl sdk",
   "main": "index.js",
   "dependencies": {
     "gulp-cli": "^2.3.0",
