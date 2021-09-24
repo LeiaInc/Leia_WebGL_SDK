@@ -6,7 +6,7 @@ export default  {
     initialise(window, navigator) {
         ConfigController.initialize(window, navigator);
         if(ConfigController.getDisplayConfig()) {
-            this.requestBacklightMode(BacklightMode.ON);
+            //this.requestBacklightMode(BacklightMode.ON);
         }
         this.registerFocusEvents(window);
     },
