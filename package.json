@@ -4,29 +4,12 @@
   "description": "leia webgl sdk",
   "main": "index.js",
   "dependencies": {
-    "gulp-cli": "^2.3.0",
-    "laravel-mix": "^6.0.28",
-	"twgl.js": "^4.19.1",
     "node-fetch": "^2.6.1",
-    "three": "^0.132.2"
+    "twgl.js": "^4.19.1"
   },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-requirejs": "^1.4.0",
-    "resolve-url-loader": "^4.0.0",
-    "sass": "^1.38.2",
-    "sass-loader": "^12.1.0",
-    "twgl.js": "^4.19.2"
-  },
+  "devDependencies": {},
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "test": "node tests/test.js"
   },
   "author": "leia",
   "license": "ISC"
