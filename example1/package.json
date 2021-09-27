@@ -1,0 +1,23 @@
+{
+  "name": "leiawebglsdk_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack",
+    "serve": "node app.js",
+    "try": "npx webpack && adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main -a android.intent.action.VIEW -d $(ipconfig getifaddr en0)\":3000\" && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "leiawebglsdk": "file:../",
+    "three": "^0.132.2",
+    "webpack": "^5.54.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+}
