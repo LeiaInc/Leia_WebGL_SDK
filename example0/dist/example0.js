@@ -1,20 +1,20 @@
-/******/ (() => { // webpackBootstrap
+../../src//******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./example0/main.js":
+/***/ "../main.js":
 /*!**************************!*\
-  !*** ./example0/main.js ***!
+  !*** ../main.js ***!
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! three */ "./node_modules/three/build/three.module.js");
-/* harmony import */ var three_examples_jsm_libs_stats_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! three/examples/jsm/libs/stats.module.js */ "./node_modules/three/examples/jsm/libs/stats.module.js");
-/* harmony import */ var _leiawebglsdk_RenderController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../leiawebglsdk/RenderController.js */ "./leiawebglsdk/RenderController.js");
-/* harmony import */ var _leiawebglsdk_BackLightController_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../leiawebglsdk/BackLightController.js */ "./leiawebglsdk/BackLightController.js");
-/* harmony import */ var _leiawebglsdk_Constants_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../leiawebglsdk/Constants.js */ "./leiawebglsdk/Constants.js");
-/* harmony import */ var _leiawebglsdk_Constants_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_leiawebglsdk_Constants_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! three */ "../../node_modules/three/build/three.module.js");
+/* harmony import */ var three_examples_jsm_libs_stats_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../../node_modules/three/examples/jsm/libs/stats.module.js");
+/* harmony import */ var _leiawebglsdk_RenderController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( "../../src/RenderController.js");
+/* harmony import */ var _leiawebglsdk_BackLightController_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../../src/BackLightController.js");
+/* harmony import */ var _leiawebglsdk_Constants_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/Constants.js");
+/* harmony import */ var _leiawebglsdk_Constants_js__WEBPACK_IMPORTED_MODULE_3___default = __webpack_require__.n(_leiawebglsdk_Constants_js__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -236,9 +236,9 @@ main();
 
 /***/ }),
 
-/***/ "./leiawebglsdk/BackLightController.js":
+/***/ "../../src/BackLightController.js":
 /*!*********************************************!*\
-  !*** ./leiawebglsdk/BackLightController.js ***!
+  !*** ../../src/BackLightController.js ***!
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -247,8 +247,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ConfigController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ConfigController.js */ "./leiawebglsdk/ConfigController.js");
-/* harmony import */ var _Constants_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Constants.js */ "./leiawebglsdk/Constants.js");
+/* harmony import */ var _ConfigController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ConfigController.js */ "../../src/ConfigController.js");
+/* harmony import */ var _Constants_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Constants.js */ "../../src/Constants.js");
 /* harmony import */ var _Constants_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Constants_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -300,9 +300,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./leiawebglsdk/ConfigController.js":
+/***/ "../../src/ConfigController.js":
 /*!******************************************!*\
-  !*** ./leiawebglsdk/ConfigController.js ***!
+  !*** ../../src/ConfigController.js ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -311,7 +311,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Constants.js */ "./leiawebglsdk/Constants.js");
+/* harmony import */ var _Constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Constants.js */ "../../src/Constants.js");
 /* harmony import */ var _Constants_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Constants_js__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -352,9 +352,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./leiawebglsdk/Constants.js":
+/***/ "../../src/Constants.js":
 /*!***********************************!*\
-  !*** ./leiawebglsdk/Constants.js ***!
+  !*** ../../src/Constants.js ***!
   \***********************************/
 /***/ ((module) => {
 
@@ -547,9 +547,9 @@ module.exports = (_module$exports = {
 
 /***/ }),
 
-/***/ "./leiawebglsdk/RenderController.js":
+/***/ "../../src/RenderController.js":
 /*!******************************************!*\
-  !*** ./leiawebglsdk/RenderController.js ***!
+  !*** ../../src/RenderController.js ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -559,11 +559,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var twgl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! twgl.js */ "./node_modules/twgl.js/dist/4.x/twgl-full.module.js");
-/* harmony import */ var _shaders_VertexShader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shaders/VertexShader.js */ "./leiawebglsdk/shaders/VertexShader.js");
-/* harmony import */ var _shaders_FragmentShader_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shaders/FragmentShader.js */ "./leiawebglsdk/shaders/FragmentShader.js");
-/* harmony import */ var _shaders_ViewSharpeningShader_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shaders/ViewSharpeningShader.js */ "./leiawebglsdk/shaders/ViewSharpeningShader.js");
-/* harmony import */ var _ConfigController_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ConfigController.js */ "./leiawebglsdk/ConfigController.js");
-/* harmony import */ var _BackLightController_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./BackLightController.js */ "./leiawebglsdk/BackLightController.js");
+/* harmony import */ var _shaders_VertexShader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shaders/VertexShader.js */ "../../src/shaders/VertexShader.js");
+/* harmony import */ var _shaders_FragmentShader_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shaders/FragmentShader.js */ "../../src/shaders/FragmentShader.js");
+/* harmony import */ var _shaders_ViewSharpeningShader_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shaders/ViewSharpeningShader.js */ "../../src/shaders/ViewSharpeningShader.js");
+/* harmony import */ var _ConfigController_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ConfigController.js */ "../../src/ConfigController.js");
+/* harmony import */ var _BackLightController_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./BackLightController.js */ "../../src/BackLightController.js");
 
 
 
@@ -671,7 +671,7 @@ function setRectangle(gl, x, y, width, height) {
       this.aspectRatio = this.screenHeight / this.screenWidth;
       this.interlacingMatrixLandscape = this.displayConfig.floatParams[4].Collection;
       this.interlacingVector = this.displayConfig.floatParams[8].Collection;
-    } else //portrait primary 
+    } else //portrait primary
       {
         this.canvas.height = this.screenWidth;
         this.canvas.width = this.screenHeight;
@@ -865,7 +865,7 @@ function setRectangle(gl, x, y, width, height) {
   calculateCameraPositions: function calculateCameraPositions(wOffset, camCount, camType) {
     for (var i = 0; i < camCount; i++) {
       var xPosition = this.baseline * (i - wOffset);
-      this.cameraPositions.push(xPosition); //   currentOrientation = 
+      this.cameraPositions.push(xPosition); //   currentOrientation =
 
       var projectionMat = this.calculateProjectionMatrix(camCount, "LandscapeRight", {
         width: this.rtWidth,
@@ -1030,9 +1030,9 @@ function createShader(gl, sourceCode, type) {
 
 /***/ }),
 
-/***/ "./leiawebglsdk/shaders/FragmentShader.js":
+/***/ "../../src/shaders/FragmentShader.js":
 /*!************************************************!*\
-  !*** ./leiawebglsdk/shaders/FragmentShader.js ***!
+  !*** ../../src/shaders/FragmentShader.js ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1045,9 +1045,9 @@ var FRAG_SHADER = "precision highp float;\nprecision highp int;\n\n// our textur
 
 /***/ }),
 
-/***/ "./leiawebglsdk/shaders/VertexShader.js":
+/***/ "../../src/shaders/VertexShader.js":
 /*!**********************************************!*\
-  !*** ./leiawebglsdk/shaders/VertexShader.js ***!
+  !*** ../../src/shaders/VertexShader.js ***!
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1060,9 +1060,9 @@ var V_SHADER = "attribute vec2 a_position;\nattribute vec2 a_texCoord;\n\nunifor
 
 /***/ }),
 
-/***/ "./leiawebglsdk/shaders/ViewSharpeningShader.js":
+/***/ "../../src/shaders/ViewSharpeningShader.js":
 /*!******************************************************!*\
-  !*** ./leiawebglsdk/shaders/ViewSharpeningShader.js ***!
+  !*** ../../src/shaders/ViewSharpeningShader.js ***!
   \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -61169,7 +61169,7 @@ Stats.Panel = function ( name, fg, bg ) {
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -61183,17 +61183,17 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -61226,7 +61226,7 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -61238,7 +61238,7 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -61250,12 +61250,12 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -61266,11 +61266,11 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -61278,19 +61278,19 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			"/example0": 0,
 /******/ 			"example1": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -61315,20 +61315,20 @@ Stats.Panel = function ( name, fg, bg ) {
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
+/******/
 /******/ 		var chunkLoadingGlobal = self["webpackChunksevensummitswebglsdkdemo"] = self["webpackChunksevensummitswebglsdkdemo"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["example1"], () => (__webpack_require__("./example0/main.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["example1"], () => (__webpack_require__("./example1/index.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;
