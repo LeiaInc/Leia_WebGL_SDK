@@ -15,11 +15,26 @@ https://docs.leialoft.com/developer/webgl-sdk/initializing-the-sdk
 
 ---
 ## Demo
-Demo scene uses laravel-mix, a simplified wrapper for webpack, to connect to the SDK
-To run this demo:
-1. `npm install leiawebglsdk`
-2. `npm run dev` or `npm run watch` (see: laravel-mix documentation for more info)
-3. In another terminal window, use  `npx http-server` or your http server of choice to serve the files
+
+To run sample scene, do
+
+`npm install` once, then (from example1 dir):
+
+`cd example1`
+
+`npm install` (once)
+
+`npm run build` (once and every time you change src/index.js)
+
+`npm run serve` 
+
+Then use displayed address to open the demo.
+
+If you are on macOS, have adb installed, have your device connected you can execute:
+
+`npm run try`
+
+which will do build, serve and will open the demo in Chrome on device.
 
 ---
 ## Acknowledgments:
