@@ -14,9 +14,9 @@ Click here to download: https://webbacklight.web.app/backlight_switch_url-releas
 https://docs.leialoft.com/developer/webgl-sdk/initializing-the-sdk
 
 ---
-## Demo
+## Demo : Example 1
 
-To run sample scene, do
+To run sample scene:
 
 `npm install` once, then (from example1 dir):
 
@@ -26,7 +26,7 @@ To run sample scene, do
 
 `npm run build` (once and every time you change src/index.js)
 
-`npm run serve` 
+`npm run serve`
 
 Then use displayed address to open the demo.
 
@@ -38,4 +38,4 @@ which will do build, serve and will open the demo in Chrome on device.
 
 ---
 ## Acknowledgments:
-Thank you to Jake Downs, who was instrumental in getting integration steps smoothed out!
+Thank you to [Jake Downs](https://github.com/jakedowns), who was instrumental in getting integration steps smoothed out!
