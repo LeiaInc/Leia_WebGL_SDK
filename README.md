@@ -38,7 +38,7 @@ which will do build, serve and will open the demo in Chrome on device.
 
 ---
 ## Known Issues
-<canvas>.requestFullscreen() is currently unsupported and breaks interlacing effect. Support for this is currently under development.
+(canvas).requestFullscreen() is currently unsupported and breaks interlacing effect. Support for this is currently under development.
 
 ---
 ## Acknowledgments:
