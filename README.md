@@ -11,7 +11,7 @@ Click here to download: https://webbacklight.web.app/backlight_switch_url-releas
 ---
 
 ## Getting Started
-https://docs.leialoft.com/developer/webgl-sdk/initializing-the-sdk
+https://docs.leialoft.com/developer/webgl-sdk/leia-webgl-sdk
 
 ---
 ## Demo : Example 1
@@ -35,6 +35,10 @@ If you are on macOS, have adb installed, have your device connected you can exec
 `npm run try`
 
 which will do build, serve and will open the demo in Chrome on device.
+
+---
+## Known Issues
+<canvas>.requestFullscreen() is currently unsupported and breaks interlacing effect. Support for this is currently under development.
 
 ---
 ## Acknowledgments:
