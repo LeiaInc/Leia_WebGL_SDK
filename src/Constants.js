@@ -1,19 +1,19 @@
 // All SDK level constants will be exported from here
 
 // Backlight Toggle URL TOGGLE
-const BACKLIGHT_URL = "https://webbacklight.web.app/?mode=";
+export const BACKLIGHT_URL = "https://webbacklight.web.app/?mode=";
 
 // Backlight mode enum
-const BacklightMode = Object.freeze({"OFF":"2D", "ON":"3D"});
+export const BacklightMode = Object.freeze({"OFF":"2D", "ON":"3D"});
 
 // Available devices
-const DeviceIds = ["LPD-10W", "H1A1000"]
+export const DeviceIds = ["LPD-10W", "H1A1000"]
 
 // Device id to config map
-const DeviceIdConfigMap = Object.freeze({"LPD-10W":"LUMEPAD", "H1A1000":"HYDROGEN"});
+export const DeviceIdConfigMap = Object.freeze({"LPD-10W":"LUMEPAD", "H1A1000":"HYDROGEN"});
 
 // Available configs
-const DisplayConfigs = Object.freeze({
+export const DisplayConfigs = Object.freeze({
     // CONFIG 1 : LUMEPAD
     "LUMEPAD": {
         "stringParams": [
@@ -485,12 +485,3 @@ const DisplayConfigs = Object.freeze({
         ]
     }
 })
-
-
-module.exports = {
-    BACKLIGHT_URL: BACKLIGHT_URL,
-    BacklightMode: BacklightMode,
-    DisplayConfigs: DisplayConfigs,
-    DeviceIds, DeviceIds,
-    DeviceIdConfigMap: DeviceIdConfigMap
-}

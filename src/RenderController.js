@@ -1,11 +1,8 @@
-import { m4 } from "twgl.js";
 import { V_SHADER } from "./shaders/VertexShader.js";
 import { FRAG_SHADER } from "./shaders/FragmentShader.js";
 import { VIEWSHARPENING_SHADER } from "./shaders/ViewSharpeningShader.js";
 import ConfigController from "./ConfigController.js";
 import BackLightController from "./BackLightController.js";
-
-console.log('render controller.js', m4);
 
 var CAMCOUNT = 4;
 
@@ -378,11 +375,11 @@ export default {
   },
   calculateProjectionMatrix(camCount, orientation, renderTextureResolution, camType,
     fov, convergenceDistance, localCamPosition, near, far) {
-    let projectionMatrix = m4.identity;
+    var projectionMatrix;
     if (camType == "perspective") {
-      projectionMatrix = m4.perspective(fov, this.aspectRatio, near, far);
+      projectionMatrix = perspective(fov, this.aspectRatio, near, far);
     } else {
-      projectionMatrix = m4.ortho(-20, 20, -20, 20, near, far);
+      projectionMatrix = ortho(-20, 20, -20, 20, near, far);
     }
     let shearY = projectionMatrix[0] * localCamPosition / convergenceDistance;
     projectionMatrix[8] = -shearY;
@@ -535,6 +532,20 @@ function perspective(fieldOfViewYInRadians, aspect, zNear, zFar, convergenceDist
     0, f, 0, 0,
     0, 0, (zNear + zFar) * rangeInv, -1,
     0, 0, zNear * zFar * rangeInv * 2, 0];
+  return dst;
+}
+
+function ortho(left, right, bottom, top, near, far) {
+  let dst = [];
+
+  dst = 
+  [
+    2 / (right - left), 0, 0, 0,
+    0, 2 / (top - bottom), 0, 0,
+    0, 0, 2 / (near - far), 0,
+    (right + left) / (left - right), (top + bottom) / (bottom - top), (far + near) / (near - far), 1
+  ];
+
   return dst;
 }
 
