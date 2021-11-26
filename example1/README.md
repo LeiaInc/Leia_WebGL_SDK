@@ -1,10 +1,18 @@
 This is a spinning textured cube sample scene with LeiaWebGL SDK enabled.
 
-To run the example1, execute npm install in root dir, then cd to example1 and do:
+To run the example1, execute `npm install` in root dir, then cd to example1 and do:
 
-    npm install
-    npm run build
-    npm run serve
+    `npm install` (once)
+    `npm run build` (once and every time you change src/index.js)
+    `npm run serve`
+
+Then use displayed address to open the demo.
+
+If you are on macOS, have adb installed, have your device connected you can execute:
+
+`npm run try`
+
+which will do build, serve and will open the demo in Chrome on device.
 
 Tap on the page to enable the backlight.
 
