@@ -158,7 +158,8 @@ export default {
   },
 
   setBaseline(value) {
-    this.baseline = value;
+    if(value >= 0.001)
+      this.baseline = value;
   },
 
   setNear(value) {
