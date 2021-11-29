@@ -14,27 +14,22 @@ Click here to download: https://webbacklight.web.app/backlight_switch_url-releas
 https://docs.leialoft.com/developer/webgl-sdk/leia-webgl-sdk
 
 ---
+
 ## Demo : Example 1
 
-To run sample scene:
+See readme.md from example1 directory
 
-`npm install` once, then (from example1 dir):
+---
 
-`cd example1`
+## Demo : Example 2
 
-`npm install` (once)
+See readme.md from example2 directory
 
-`npm run build` (once and every time you change src/index.js)
+---
 
-`npm run serve`
+## Demo : Example 3
 
-Then use displayed address to open the demo.
-
-If you are on macOS, have adb installed, have your device connected you can execute:
-
-`npm run try`
-
-which will do build, serve and will open the demo in Chrome on device.
+See readme.md from example3 directory
 
 ---
 ## Known Issues
