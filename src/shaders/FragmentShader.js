@@ -21,7 +21,7 @@ uniform float _viewResY;
 uniform float _viewsX;
 uniform float _viewsY;
 
-uniform mat4 _interlace_matrix;
+uniform mat4 _interlace_matrix; 
 uniform vec4 _interlace_vector;
 
 varying vec2 v_texCoord;
@@ -45,7 +45,7 @@ highp mat4 transpose(in highp mat4 inMatrix) {
 }
 
 vec4 sample_view(vec2 uv, int view)
- {
+ {	
   if (view == 0)
   {
     return texture2D(_texture_0, uv);
@@ -67,9 +67,9 @@ vec4 sample_view(vec2 uv, int view)
 }
 
 mat4 interlace_map(mat4 normalized_pixel_matrix) {
-
+   
   mat4 result = normalized_pixel_matrix * _interlace_matrix;
-
+      
   for (int axis = 0; axis < 4; ++axis) {
     result[axis] += _interlace_vector[axis];
   }
@@ -111,7 +111,7 @@ float view_volume(vec4 normalized_view_pixel) {
   return 0.0;//sampleViewCol[0];
 }
 
-vec4 interlaced_sample(vec2 normalized_display_coord)
+vec4 interlaced_sample(vec2 normalized_display_coord) 
 {
   mat4 normalized_display_pixel_matrix = mat4(
     normalized_display_coord.xxxx,
@@ -150,6 +150,6 @@ void main()
   vec4 interlaced_fragment = interlaced_sample(normalized_display_coord);
 
   gl_FragColor = interlaced_fragment;
-
-
+  
+  
 }`;

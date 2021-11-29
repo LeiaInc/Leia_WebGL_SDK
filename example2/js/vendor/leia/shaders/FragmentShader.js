@@ -21,7 +21,7 @@ uniform float _viewResY;
 uniform float _viewsX;
 uniform float _viewsY;
 
-uniform mat4 _interlace_matrix;
+uniform mat4 _interlace_matrix; 
 uniform vec4 _interlace_vector;
 
 varying vec2 v_texCoord;
