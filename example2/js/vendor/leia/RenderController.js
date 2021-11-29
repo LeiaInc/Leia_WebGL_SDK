@@ -332,7 +332,8 @@ export default {
     this.convergenceDistance = value;
   },
   setBaseline(value) {
-    this.baseline = value;
+    if(value >= 0.001)
+      this.baseline = value;
   },
   setNear(value) {
     this.near = value;

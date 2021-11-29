@@ -1,0 +1,32 @@
+/* main.css */
+
+canvas {
+  display: block; /* fix necessary to remove space at bottom of canvas */
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 1.0rem;
+  z-index: 1;
+}
+
+a {
+  color: white;
+}
+a:hover{
+  color: rgb(26, 243, 160);
+}
+
+#scene-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
