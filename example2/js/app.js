@@ -40,7 +40,6 @@ function init()
     controller = RenderController;
     controller.initialize(mainCanvas, gl, window);
     controller.setConvergence(10);
-    controller.setupCanvas(gl);
     var rtWidth = controller.getRenderTextureWidth();
     var rtHeight = controller.getRenderTextureHeight();
     renderTarget = new THREE.WebGLRenderTarget(rtWidth,rtHeight);
@@ -61,7 +60,6 @@ function init()
 
     controller.adaptToOrientation(screen.orientation.type);
     updateProjMats(controller);
-    controller.setupTextures(gl, rtWidth, rtHeight);
     
     // create scene
     scene = new THREE.Scene();
