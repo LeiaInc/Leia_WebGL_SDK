@@ -12,21 +12,17 @@ uniform sampler2D _texture_6;
 uniform sampler2D _texture_7;
 
 // other inputs
-uniform float _width;// = 2560.0;
-uniform float _height;// = 1600.0;
+uniform float _width;
+uniform float _height;
 
-uniform float _viewResX;// = 640.0;
-uniform float _viewResY;// = 400.0;
+uniform float _viewResX;
+uniform float _viewResY;
 
-uniform float _viewsX;//= 4.0;
-uniform float _viewsY;// = 1.0;
+uniform float _viewsX;
+uniform float _viewsY;
 
-uniform mat4 _interlace_matrix; /* = mat4(
-                                              1,0,0,640,
-                                              0,1,0,0,
-                                              0,0,1,0,
-                                              0,0,0,0);//mat4(1,0,0,0,0,1,0,0,0,0,1,0,640,0,0,0); */
-uniform vec4 _interlace_vector;// = vec4(0,0,0,0);
+uniform mat4 _interlace_matrix; 
+uniform vec4 _interlace_vector;
 
 varying vec2 v_texCoord;
 
