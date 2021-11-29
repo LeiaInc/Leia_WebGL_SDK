@@ -10,7 +10,6 @@ function main() {
             (1.0/window.devicePixelRatio) + ', minimum-scale=0.01, user-scalable=0');
 
     // setup:
-    const canvas = document.querySelector('#hiddenCanvas'); // for three.js
     const mainCanvas = document.querySelector("#myCanvas"); // for leia webgl sdk
     var clickCount = 0
     mainCanvas.onclick = () => {
@@ -23,13 +22,12 @@ function main() {
     var gl = mainCanvas.getContext("webgl", { preserveDrawingBuffer : true });
     const controller = RenderController;
     var convergenceDistance = 20; // distance from camera to the focus point
-    controller.initialize(mainCanvas, gl, window);
+    controller.initialize(mainCanvas, gl, window, false, 16, true);
     controller.setConvergence(convergenceDistance);
-    const renderer = new THREE.WebGLRenderer({canvas});
+    const renderer = new THREE.WebGLRenderer({mainCanvas});
     const fov = 60, aspect = 1.6, near = 0.1, far = 100;
     //const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     const scene = new THREE.Scene();
-    controller.setupCanvas(gl);
     const rtWidth = controller.getRenderTextureWidth();
     const rtHeight = controller.getRenderTextureHeight();
     const renderTarget = new THREE.WebGLRenderTarget(rtWidth,rtHeight);
@@ -59,7 +57,6 @@ function main() {
     }, false);
     controller.adaptToOrientation(screen.orientation.type);
     updateProjMats();
-    controller.setupTextures(gl, rtWidth, rtHeight);
 
     scene.background = new THREE.Color("rgb(0, 128, 256)");
 

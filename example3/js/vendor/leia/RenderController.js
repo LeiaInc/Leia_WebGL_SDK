@@ -87,12 +87,12 @@ export default {
     gl.attachShader(this.program2, viewSharpeningShader);
     gl.linkProgram(this.program);
     gl.linkProgram(this.program2);
-
+  
     // Create a buffer for fullscreen rectangle vertices.
     positionBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
     setRectangle(gl, 0, 0, this.screenWidth, this.screenHeight);
-
+    
     // Create buffer for fullscreen rectangle texture coordinates.
     texcoordBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, texcoordBuffer);
@@ -135,7 +135,7 @@ export default {
       this.interlacingMatrixLandscape = this.displayConfig.floatParams[4].Collection;
       this.interlacingVector = this.displayConfig.floatParams[8].Collection;
     }
-    else //portrait primary
+    else //portrait primary 
     {
       this.canvas.height = this.screenWidth;
       this.canvas.width = this.screenHeight;
@@ -242,7 +242,7 @@ export default {
     {
         var enabled = gl.getVertexAttrib(i, gl.VERTEX_ATTRIB_ARRAY_ENABLED);
         this.prevAttribsEnabled.push(enabled);
-
+        
         var buffer = gl.getVertexAttrib(i, gl.VERTEX_ATTRIB_ARRAY_BUFFER_BINDING);
         this.prevAttribsBoundBuffers.push(buffer);
 
@@ -254,7 +254,7 @@ export default {
 
         var type = gl.getVertexAttrib(i, gl.VERTEX_ATTRIB_ARRAY_TYPE);
         this.prevAttribsType.push(type);
-
+        
         var normalized = gl.getVertexAttrib(i, gl.VERTEX_ATTRIB_ARRAY_NORMALIZED);
         this.prevAttribsNormalized.push(normalized);
 
@@ -279,7 +279,7 @@ export default {
     gl.blendFunc(this.prevBlendSrc, this.prevBlendDst);
     if(this.prevBlendEnable)
       gl.enable(gl.BLEND);
-    else
+    else 
       gl.disable(gl.BLEND);
     gl.clearColor( this.prevClearColor[0],this.prevClearColor[1],this.prevClearColor[2],this.prevClearColor[3]);
     gl.canvas.width = this.prevWidth;
@@ -287,7 +287,7 @@ export default {
     gl.viewport(this.prevViewport[0],this.prevViewport[1],this.prevViewport[2],this.prevViewport[3]);
     for(var i=0; i<maxAttribs; i++)
     {
-      gl.bindBuffer(gl.ARRAY_BUFFER, this.prevAttribsBoundBuffers[i]);
+      gl.bindBuffer(gl.ARRAY_BUFFER, this.prevAttribsBoundBuffers[i]);      
       gl.vertexAttribPointer(i, this.prevAttribsSize[i], this.prevAttribsType[i], this.prevAttribsNormalized[i], this.prevAttribsStride[i], this.prevAttribsOffset[i]);
       if(this.prevAttribsEnabled[i])
         gl.enableVertexAttribArray(i);
@@ -315,14 +315,14 @@ export default {
         //newWidth = this.screenHeight;
         //newHeight = this.screenWidth;
       }
-
+      
       gl.canvas.width = newWidth;//window.innerWidth;
       gl.canvas.height = newHeight;
 
       gl.viewport(0, 0, newWidth, newHeight);
     }
 
-    // Select interlacing program.
+    // Select interlacing program.   
     gl.useProgram(this.program);
 
     // Set vertex shader inputs.
@@ -334,7 +334,7 @@ export default {
       // Get attribute locations.
       var a_positionLocation = gl.getAttribLocation(this.program, "a_position");
       var a_texcoordLocation = gl.getAttribLocation(this.program, "a_texCoord");
-
+  
       // Set position buffer attribute.
       gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
       gl.vertexAttribPointer(a_positionLocation, 2, gl.FLOAT, false, 0, 0);
@@ -361,7 +361,7 @@ export default {
       var u_interlaceMatLocation = gl.getUniformLocation(this.program, "_interlace_matrix");
       var u_interlaceVecLocation = gl.getUniformLocation(this.program, "_interlace_vector");
       var u_resolutionLocation = gl.getUniformLocation(this.program, "u_resolution");
-
+  
       gl.uniform1i(u_texture0Location, 0);
       gl.uniform1i(u_texture1Location, 1);
       gl.uniform1i(u_texture2Location, 2);
@@ -431,7 +431,7 @@ export default {
       // Get attribute locations.
       var a_positionLocation = gl.getAttribLocation(this.program2, "a_position");
       var a_texcoordLocation = gl.getAttribLocation(this.program2, "a_texCoord");
-
+  
       // Set position buffer attribute.
       gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
       gl.vertexAttribPointer(a_positionLocation, 2, gl.FLOAT, false, 0, 0);
@@ -447,7 +447,7 @@ export default {
     {
       var u_resolutionLocation = gl.getUniformLocation(this.program2, "u_resolution");
       var u_imageLocation = gl.getUniformLocation(this.program2, "u_image");
-
+  
       gl.uniform2f(u_resolutionLocation, this.screenWidth, this.screenHeight);
       gl.uniform1i(u_imageLocation, 0);
     }
@@ -458,7 +458,7 @@ export default {
 
     // Draw rectangle.
     gl.drawArrays(gl.TRIANGLES, 0, 6);
-
+    
     // Disable texture units.
     gl.activeTexture(gl.TEXTURE0);
     gl.bindTexture(gl.TEXTURE_2D, null);
@@ -472,7 +472,7 @@ export default {
     // Enable blending.
     gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
     gl.enable(gl.BLEND);
-
+    
     // First pass: Interlace render-targets into staging buffer.
     this.gl.bindFramebuffer(gl.FRAMEBUFFER, enableViewSharpening ? this.stagingFrameBuffer : null);
     this.firstPass();
@@ -505,7 +505,7 @@ function perspective(fieldOfViewYInRadians, aspect, zNear, zFar) {//}, convergen
 function ortho(left, right, bottom, top, near, far) {
   let dst = [];
 
-  dst =
+  dst = 
   [
     2 / (right - left), 0, 0, 0,
     0, 2 / (top - bottom), 0, 0,
@@ -541,7 +541,7 @@ function createTexture(width, height, includeRenderTarget, includeDepthBuffer) {
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
-
+    
   // Bind texture to rendertarget.
   var rt = null;
   if(includeRenderTarget)
