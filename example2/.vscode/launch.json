@@ -13,9 +13,9 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Launch Edge against localhost",
+            "type": "edge",
             "request": "launch",
-            "type": "pwa-msedge",
+            "name": "Launch Edge against localhost",
             "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}"
         }
